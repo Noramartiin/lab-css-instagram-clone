@@ -8,3 +8,102 @@ body {
   font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
 }
+.header{
+  height: 240px;
+  background-image: url("../images/bgtile.png");
+  background-repeat:repeat-x;
+  position: relative;
+}
+#adjustment{
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+}
+.phones-img{
+  height: 480px;
+  width: auto;
+  margin-top: 100px;
+  margin-left: 100px;
+  margin-right: 75px;
+  margin-bottom: 20px;
+}
+
+.right{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-right: 80px;
+ 
+}
+
+.login-btn{
+  background-image: url(../images/home.png);
+  width: 100px;
+  height: 40px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: 4px center;
+  text-align:center;
+  background-color:#1c5380;
+  color: white;
+  justify-content: stretch;
+  padding-left: 38px;
+  border-radius:8px;
+  margin-bottom: 20px;
+  margin-top: ;
+}
+
+.login-img{
+  margin-top: 110px;
+  margin-right: 70px;
+}
+
+.box{
+  background-color: white;
+  width: 500px;
+  height : 500px;
+  margin-right: 50px;
+  border-radius:12px;
+  padding:20px;
+  border-color: #06365f;
+  border-width: 20px;
+  margin-bottom: 20px;
+}
+
+h1{
+  color: #06365f;
+  size: 30px;
+  font-size: 30px;
+}
+
+p{
+font-size: 18px;
+}
+
+.download-img{
+margin-top: 40px;
+padding:10px;
+display: flex;
+flex-flow: row, nowrap;
+align-items: flex-start;
+justify-content: space-evenly; 
+}
+
+.footer{ 
+  
+  display:flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 30px;
+  color:#06365f;
+}
+
+a{
+  padding-left: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
