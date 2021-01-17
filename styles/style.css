@@ -3,10 +3,48 @@ Colors to use:
 dark blue: #06365f
 light blue: #1c5380
 */
+@media (min-width: 600px) and (max-width:1000px){
+ body{
+   width: 900px;
+   height: 900px;
+ }
+ #adjustment{
+   display: flex;
+   flex-direction: row;
+   align-items: flex-start;
+   justify-content: flex-start;
+  }
+  footer{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+ }
+
+@media (min-width: 1000px) and (max-width:1200px){
+  body{
+    width: 1000px;
+    height: 1000px; 
+  }
+  #adjustment{
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  footer{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
+}
 
 body {
   font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin: 0;
+  margin: 10px;
 }
 .header{
   height: 240px;
@@ -30,11 +68,9 @@ body {
 
 .right{
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
+  flex-wrap: nowrap;
   justify-content: center;
-  margin-right: 80px;
- 
 }
 
 .login-btn{
@@ -46,39 +82,44 @@ body {
   background-position: 4px center;
   text-align:center;
   background-color:#1c5380;
-  color: white;
   justify-content: stretch;
   padding-left: 38px;
-  border-radius:8px;
+  border-radius: 4px;
   margin-bottom: 20px;
-  margin-top: ;
+  font-weight: bold;
+  font-size: 15px;
+  color: white;
+  border: #06365f;
+}
+#header{
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 30px;
 }
 
 .login-img{
-  margin-top: 110px;
-  margin-right: 70px;
+  margin-top: 70px;
+  margin-right: 120px;
 }
 
 .box{
   background-color: white;
   width: 500px;
   height : 500px;
-  margin-right: 50px;
-  border-radius:12px;
-  padding:20px;
-  border-color: #06365f;
-  border-width: 20px;
-  margin-bottom: 20px;
+  padding: 0 20px 0;
+  border-radius: 8px;
+  border: solid;
+  border-image-source: url(../images/frame.png);
+  border-image-slice: 27;
 }
 
 h1{
   color: #06365f;
-  size: 30px;
-  font-size: 30px;
+  font-size: 24px;
 }
 
 p{
-font-size: 18px;
+font-size: 15px;
 }
 
 .download-img{
@@ -91,13 +132,11 @@ justify-content: space-evenly;
 }
 
 .footer{ 
-  
   display:flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
-  align-items: flex-start;
-  padding-left: 30px;
+  align-items: flex-end;
   color:#06365f;
 }
 
@@ -105,5 +144,13 @@ a{
   padding-left: 30px;
   text-decoration: none;
   text-transform: uppercase;
+  font-weight: bold;
+  color: #1c5380;
 }
-
+	
+#cpr{
+  color: grey;
+  padding-left: 40px;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
